@@ -2,6 +2,7 @@
 ---
 ### Installing dependencies
   > composer install
+
   > npm install
 
 ### Running the application:
@@ -9,7 +10,7 @@
 
   > npm run dev (in another console window)
 
-<p align="center"><img src="./Screenshot_Chirp_App.gif" width="400" alt="Laravel Logo"></p>
+<p align="center"><img src="./Screenshot_Chirp_App.gif" alt="Chirp App by Jonatandb"></p>
 
 ---
 
