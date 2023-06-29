@@ -17,7 +17,7 @@
   > npm run dev (In another console window)
 
 ### Visiting the web app to register an user and start to create Chipers!:
-  - http://localhost/chiper/public/ (If you have Apache installed and running and chiper app in htdocs Apache folder)
+  - http://localhost/chirper/public/ (If you have Apache installed and running and chiper app in htdocs Apache folder)
   - http://127.0.0.1:8000/ (If you don't have Apache installed and running. Both, php artisan serve and npm run dev must be executed first)
 
 
