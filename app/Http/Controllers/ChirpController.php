@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Chrip;
+use App\Models\Chirp;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\View\View;
+use Illuminate\Http\RedirectResponse;
 
-class ChripController extends Controller
+class ChirpController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -28,15 +29,22 @@ class ChripController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(Request $request): RedirectResponse
     {
         //
+        $validated = $request->validate([
+            'message' => 'required|string|max:255',
+        ]);
+
+        $request->user()->chirps()->create($validated);
+
+        return redirect(route('chirps.index'));
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Chrip $chrip)
+    public function show(Chirp $chirp)
     {
         //
     }
@@ -44,7 +52,7 @@ class ChripController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Chrip $chrip)
+    public function edit(Chirp $chirp)
     {
         //
     }
@@ -52,7 +60,7 @@ class ChripController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Chrip $chrip)
+    public function update(Request $request, Chirp $chirp)
     {
         //
     }
@@ -60,7 +68,7 @@ class ChripController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Chrip $chrip)
+    public function destroy(Chirp $chirp)
     {
         //
     }
