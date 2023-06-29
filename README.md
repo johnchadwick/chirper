@@ -1,3 +1,4 @@
+<p align="center"><img src="./Screenshot_Chirp_App.gif" alt="Chirp App by Jonatandb"></p>
 
 ---
 ### Installing dependencies:
@@ -19,7 +20,6 @@
   - http://localhost/chiper/public/ (If you have Apache installed and running and chiper app in htdocs Apache folder)
   - http://127.0.0.1:8000/ (If you don't have Apache installed and running. Both, php artisan serve and npm run dev must be executed first)
 
-<p align="center"><img src="./Screenshot_Chirp_App.gif" alt="Chirp App by Jonatandb"></p>
 
 ---
 
