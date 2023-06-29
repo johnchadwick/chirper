@@ -1,14 +1,23 @@
 
 ---
-### Installing dependencies
+### Installing dependencies:
   > composer install
 
   > npm install
 
-### Running the application:
-  > php artisan serve
+### Setting up environment:
+  > Create .env file by using template file: .env.example (Remove '.example')
 
-  > npm run dev (in another console window)
+### Running the application:
+  > php artisan migrate (To create a new sqlite database file)
+
+  > php artisan serve (Only required if Apache is not installed and running)
+
+  > npm run dev (In another console window)
+
+### Visiting the web app to register an user and start to create Chipers!:
+  - http://localhost/chiper/public/ (If you have Apache installed and running and chiper app in htdocs Apache folder)
+  - http://127.0.0.1:8000/ (If you don't have Apache installed and running. Both, php artisan serve and npm run dev must be executed first)
 
 <p align="center"><img src="./Screenshot_Chirp_App.gif" alt="Chirp App by Jonatandb"></p>
 
