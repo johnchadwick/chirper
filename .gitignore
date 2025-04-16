@@ -1,19 +1,60 @@
-/.phpunit.cache
-/node_modules
-/public/build
-/public/hot
-/public/storage
-/storage/*.key
+# Laravel & PHP
+/.phpunit.cache*
+.phpunit.result.cache
 /vendor
 .env
 .env.backup
 .env.production
-.phpunit.result.cache
-Homestead.json
-Homestead.yaml
+.env.local
+.env.*.local
 auth.json
+
+# Frontend
+/node_modules
+/public/build
+/public/hot
+/public/storage
 npm-debug.log
 yarn-error.log
-/.fleet
+package-lock.json
+yarn.lock
+
+# Storage
+/storage/*.key
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*.log
+/storage/debugbar/*
+
+# Database
+/database/database.sqlite*
+/database/*.sqlite-journal
+
+# Docker/Sail
+docker-compose.override.yml
+.dockerignore
+docker-compose.yml
+docker-compose.*.yml
+
+# IDE
 /.idea
 /.vscode
+/.fleet
+/.history
+
+# OS Specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Windows/WSL
+*.stackdump
+*.swp
+*~
+~$*
+ehthumbs.db
+[Tt]humbs.db
+
+# Laravel Sail specific
+.sail/
